@@ -24,9 +24,13 @@ namespace Chapter02
             DateTime threeDaysFromNow = thisMoment.Add(duration);
 
             TimeSpan duration1 = new TimeSpan(1 , 0 , 0); // One hour later
-            // Since today gives 
+            // Since Today gives 12:00:00 AM, the following gives 1:00:00 AM
+            DateTime anHourAfterMidnight = DateTime.Today.Add(duration1);
+            //Console.WriteLine("An hour after Midnight will be {0}", anHourAfterMidnight);
+            DateTime midnight = anHourAfterMidnight.Subtract(duration1);
+            //Console.WriteLine("An hour before 1 AM is {0}", midnight);
 
-            Console.WriteLine(duration);
+            //Console.WriteLine(duration);
         }
     }
 }

@@ -14,3 +14,9 @@ BooleanType.Print();
 ComparingCharAndString.Print();
 
 new CalculatingWithDateTime();
+
+new Constans();
+
+new Casting();
+
+new CompilerInferDataTypes();
